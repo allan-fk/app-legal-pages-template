@@ -20,7 +20,7 @@ h2 { margin-top: 2.4rem; font-size: 1.65rem; }
 .button { border: 1px solid var(--accent); border-radius: 999px; display: inline-flex; min-height: 44px; align-items: center; padding: 0 20px; font-weight: 700; text-decoration: none; }
 .button-primary { color: #fff; background: var(--accent); }
 .button-secondary { background: #fff; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 88px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding-bottom: 88px; }
 .card, .legal { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); box-shadow: 0 10px 30px rgba(20, 29, 50, .04); }
 .card { padding: 24px; color: var(--ink); text-decoration: none; }
 .card:hover { border-color: color-mix(in srgb, var(--accent), var(--line) 55%); transform: translateY(-2px); }
