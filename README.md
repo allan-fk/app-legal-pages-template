@@ -1,39 +1,67 @@
 # App Legal Pages Template
 
-A small static site for an app landing page plus public Privacy, Terms, Support, Delete Account, FAQ, and Changelog pages. It is designed for GitHub Pages, requires no build step, and works on any static host.
+**Publish a professional privacy policy URL, account-deletion page, support page, FAQ, changelog, and optional mobile app landing page — free, public, and without setting up a website.**
 
-This is a hosting and visual template. It does **not** create a legally complete privacy policy or terms for you.
+Built for indie iOS, Android, and web-app makers who need a public legal or support URL for the App Store, Google Play, or their own app. It works directly with **GitHub Pages**: no hosting account, no deployment command, and no web-development experience required.
 
-## Quick start
+![Preview of the app legal pages landing page](assets/screenshots/landing-page.jpg)
 
-1. Select **Use this template** on GitHub, or clone this repository.
-2. Edit `assets/config.js`: app name, developer name, support email, App Store URL, and accent color.
-3. Replace the placeholder text in the pages you use, especially `privacy.html`, `terms.html`, and `delete-account.html`.
-4. Commit and push your changes.
-5. In GitHub: **Settings → Pages → Deploy from a branch → main → /(root)**.
-6. Your pages will be available at:
-   - `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/privacy.html`
-   - `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/terms.html`
-   - `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/support.html`
+## What you get
 
-For a cleaner URL such as `https://legal.example.com/privacy.html`, configure a custom domain in GitHub Pages.
+- A simple home page to present your app (optional).
+- A public `privacy.html` page for your privacy policy.
+- A `terms.html` page for your terms of use.
+- A support contact page, FAQ, release changelog, and account-deletion instructions.
+- A mobile-friendly design that works on GitHub Pages and other static hosts.
+- One small configuration file for your app name, email address, App Store link, colour, and last-updated date.
 
-## Optional landing page
+![Preview of the privacy policy page](assets/screenshots/privacy-page.jpg)
 
-`index.html` is an optional landing page. Keep it, simplify it, or redirect it to `privacy.html` if you only need legal pages.
+## Publish your pages — no-code guide
 
-## Optional pages
+Allow about 10 minutes for your first setup.
 
-- `delete-account.html` explains the in-app deletion path and what data is removed.
-- `faq.html` answers common support questions.
-- `changelog.html` lists product releases. Duplicate its release block when you ship a version.
+1. On this repository page, click **Use this template** (the green button near the top), then choose a name for your copy.
+2. In your new repository, open `assets/config.js`. Click the pencil icon, replace the example app name, email address, App Store link, colour, and date, then click **Commit changes**.
+3. Open each page you need — especially `privacy.html`, `terms.html`, and `delete-account.html` — and replace every sentence in square brackets (`[LIKE THIS]`) with information that is true for your app.
+4. Open **Settings**, then **Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, then save.
+5. Wait one or two minutes. GitHub will show your public address, normally: `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`
+6. Your privacy-policy link will be: `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/privacy.html`
 
-## Before using the URL in an app store
+You can edit a page at any time in GitHub: open the file, click the pencil icon, save with **Commit changes**, then wait briefly for the public site to refresh.
 
-- Open the final URL in a private browser window.
-- Confirm it returns HTTPS and does not require a login.
-- Verify the policy accurately lists your app’s real data collection, sharing, permissions, retention, and account-deletion behavior.
-- Use the exact final URL in your app and store listing.
+## Which pages do I need?
+
+Start with the pages your app actually needs. The home page is optional.
+
+| If you need… | Use this page |
+| --- | --- |
+| A public privacy-policy URL for an app store | `privacy.html` |
+| A way for users to ask for help | `support.html` |
+| Account deletion instructions | `delete-account.html` |
+| Terms of use | `terms.html` |
+| Answers to common questions | `faq.html` |
+| Release notes | `changelog.html` |
+| A lightweight product site | `index.html` |
+
+If you only need a privacy policy, publish the template as-is and share the `privacy.html` link. You do not need to fill in the landing page.
+
+## Before sharing an App Store or Google Play link
+
+- Open the final URL in a private/incognito browser window.
+- Check that it starts with `https://` and does not require a login.
+- Make sure the text describes your real data collection, sharing, permissions, retention, and account-deletion behaviour.
+- Put the exact `privacy.html` URL in your store listing and inside your app where appropriate.
+
+## Make it yours
+
+All common details are in `assets/config.js`. The legal and help text stays directly in the relevant page so it is easy to find and edit.
+
+You can also use a custom domain later, for example `legal.yourapp.com`, from **Settings → Pages → Custom domain**.
+
+## Important: this is not legal advice
+
+This project gives you a clean public home for your own content. It does **not** write, review, or guarantee a legally compliant privacy policy, terms, or deletion process. Only publish statements that accurately reflect how your app works; seek qualified legal advice when you need it.
 
 ## License
 
